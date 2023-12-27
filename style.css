@@ -111,7 +111,7 @@
      font-family: 'Ubuntu', sans-serif;
      font-size: 12px;
      position: absolute;
-     bottom: 80px;
+     bottom: 18vh;
      font-weight: 300;
  }
  
@@ -125,7 +125,7 @@
  /* Styling for the social links section in the launcher */
  #launcher #social-links {
      position: absolute;
-     bottom: 5px;
+     bottom: 10vh;
      display: flex;
      justify-content: space-between;
      align-items: center;
@@ -137,7 +137,6 @@
  #launcher #social-links img {
      width: 40px;
      height: 40px;
-     margin-top: 20px; /* Adjusted margin for spacing */
  }
  
  /* Main CSS */
