@@ -201,8 +201,6 @@
      width: 100%;
      height: calc(100% - 100px);
      padding: 30px;
-     gap: 10px;
-     padding-top:8px;
      overflow: hidden;
      background-color: #b0c4de;
  }
@@ -218,6 +216,7 @@
      justify-content: center;
      align-items: center;
      color: white;
+    margin: 0.5vw;
      
  }
  
@@ -235,7 +234,7 @@
      }
  
      #top-display .elem {
-         gap: 5px;
+        
          text-align: center;
          font-size: 15px;
      }
