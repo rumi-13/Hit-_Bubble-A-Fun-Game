@@ -256,6 +256,17 @@
         
          font-size: 25px;
      }
+
+       #launcher h5 {
+        bottom: 20vh;
+        font-weight: 300;
+    }
+    
+    #launcher #social-links {
+        position: absolute;
+        bottom: 12vh;
+        
+    }
  }
  
  /* Media query for screens with a maximum width of 480px */
