@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set the character set to UTF-8 and define viewport for responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to an external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Set the title of the HTML document -->
+    <title>Bubble Game</title>
+</head>
+
+<body>
+
+    <!-- Launcher Section -->
+    <div id="launcher">
+        <!-- Heading and cartoon container for game launcher -->
+        <h1> Hit Bubble- Score Mania </h1>
+        <div class="cartoon-container">
+            <!-- Image and button for launching the game -->
+            <div id="cartoon">
+                <img class="launcher-elem"
+                    src="https://static.vecteezy.com/system/resources/thumbnails/029/128/899/small/cute-cat-wave-hand-cartoon-doodle-flat-style-png.png"
+                    alt="Cartoon Image">
+                <button id="launcher-btn">Start Game</button>
+            </div>
+        </div>
+        <!-- Developer information -->
+        <h5 class="launcher-elem">Designed & Developed By <span>Asgar Rashid</span> </h5>
+        <!-- Social media links -->
+        <div id="social-links" class="launcher-elem">
+            <li class="launcher-elem"><a href="mailto:asgar.raza013@gmail.com" id="mail"><img
+                        src="https://img.icons8.com/fluency/48/mail--v1.png" alt="Mail" /></a></li>
+            <li class="launcher-elem"><a href="https://instagram.com" id="instagram"><img
+                        src="https://img.icons8.com/fluency/48/instagram-new.png" alt="Instagram" /></a></li>
+            <li class="launcher-elem"><a href="https://twitter.com" id="twitter"><img
+                        src="https://img.icons8.com/color/48/twitter--v1.png" alt="Twitter" /></a>
+            </li>
+            <li class="launcher-elem"><a href="https://github.com/rumi-13" id="github"><img
+                        src="https://img.icons8.com/plasticine/100/github.png" alt="GitHub" /></a>
+            </li>
+        </div>
+    </div>
+
+    <!-- Main Background Container -->
+    <div id="main-bg-container">
+        <!-- Parent Container for Top Display and Bubble Container -->
+       
+            <!-- Top Display Section with Hit, Timer, and Score -->
+            <div id="top-display">
+                <!-- Hit, Timer, and Score elements -->
+                <div class="elem">
+                    <h2>Hit</h2>
+                    <div id="hitBox" class="box">7</div>
+                </div>
+                <div class="elem">
+                    <h2>Timer</h2>
+                    <div class="box" id="timer">0</div>
+                </div>
+                <div class="elem">
+                    <h2>Score</h2>
+                    <div id="scoreBox" class="box">0</div>
+                </div>
+            </div>
+
+            <!-- Container for displaying bubbles -->
+            <div id="bubble-container">
+            </div>
+       
+    </div>
+
+    <!-- External scripts for GSAP animation library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"
+        integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
+        integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Link to the main JavaScript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
