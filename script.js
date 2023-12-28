@@ -49,14 +49,14 @@ function timerClock() {
             clearInterval(timerInterval);
 
             // Styling for the Game Over message and score display
-            /*
+            
             bubbleContainer.innerHTML = `
                 <div id="resultWrapper" style="display: flex; flex-direction: column; align-items: center;">
                     <img src="https://pngfre.com/wp-content/uploads/cat-95-1024x985.png" alt="Game Over Image" style="width: 300px; height: 300px; margin-bottom: 5px;">
                     <h1 style="font-family: 'Dancing Script', cursive; color: linear-gradient(45deg, #2196F3, #64B5F6); text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); margin-bottom: 20px;">Game Over</h1>
                     <h1 style="font-family: 'Dancing Script', cursive; color: linear-gradient(45deg, #2196F3, #64B5F6); text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); margin-bottom: 20px;">Your Score = ${score}</h1>
                 </div>`;
-            */
+            
         }
     }, 1000);
 }
@@ -80,8 +80,9 @@ let score = 0;
 
 // Function to update and display the player's score
 function playerScore() {
-    score = score + 10;
+
     document.querySelector("#scoreBox").textContent = score;
+        score = score + 10;
 }
 
 // Initializing the player's score
