@@ -1,0 +1,308 @@
+/* Importing Google Fonts for the project */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Merriweather:ital,wght@1,300&family=Montserrat+Alternates&family=Roboto+Condensed:wght@200;300&family=Roboto:wght@300;400&family=Ubuntu&display=swap');
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set base styles for the entire document */
+html, body {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Styling for the launcher section */
+#launcher {
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #1a237e, #000); /* Gradient from dark blue to black */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the launcher button */
+#launcher button {
+    padding: 15px;
+    background: linear-gradient(to bottom, #3f51b5, #8c8fb2); /* Gradient for button on hover */
+    color: white;
+    border: 2px solid whitesmoke;
+    border-radius: 5%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Adjust gradient on button hover */
+#launcher button:hover {
+    background: linear-gradient(to bottom, #1a237e, #3f51b5);
+}
+
+/* Styling for the cartoon section in the launcher */
+#launcher #cartoon {
+    width: fit-content;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the heading in the launcher */
+#launcher h1 {
+    margin: 20px;
+    font-size: 4.5vh;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    position: relative;
+    transform: translateY(-50vh);
+}
+
+/* Styling for the image in the launcher */
+#launcher #cartoon img {
+    position: relative;
+    width: 300px;
+    margin-bottom: 10px;
+    top: -100px;
+    z-index: 999;
+}
+
+/* Common styling for launcher elements */
+.launcher-elem {
+    position: relative;
+    transform: translateY(700%);
+}
+
+#launcher-btn {
+    position: absolute;
+    margin-top: 40px;
+    transform: translateY(30%);
+    display: none;
+}
+
+/* Styling for the button in the cartoon section */
+#cartoon button {
+    text-align: center;
+    border: 2px solid whitesmoke;
+    color: #000000; /* Adjusted text color for better visibility */
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    background: linear-gradient(to bottom, #55658a, #757fb1); /* Lighter gradient for button background on hover */
+    border-radius: 5%;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease; /* Added color transition */
+}
+
+/* Adjust gradient on button hover in the cartoon section */
+#cartoon button:hover {
+    background: linear-gradient(to bottom, #a9b4e8, #5071be);
+    color: #040405; /* Adjusted text color on hover for better visibility */
+}
+
+/* Styling for additional information in the launcher */
+#launcher h5 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+    position: absolute;
+    bottom: 20vh;
+    font-weight: 300;
+}
+
+/* Styling for a span within the h5 element, using Dancing Script font */
+#launcher h5 span {
+    font-family: 'Dancing Script';
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+/* Styling for the social links section in the launcher */
+#launcher #social-links {
+    position: absolute;
+    bottom: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+}
+
+/* Styling for images within the social links section */
+#launcher #social-links img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Main CSS */
+#main-bg-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #3f51b5, #1a237e);
+    overflow: hidden;
+}
+
+/* Styling for the parent container within the main background container */
+
+/* Styling for the top display section */
+#top-display {
+    width: 100%;
+    height: 100px;
+    background-color: #1a237e;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+/* Styling for elements within the top display */
+#top-display .elem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Merriweather', serif;
+    gap: 10px;
+}
+
+/* Styling for boxes within the top display */
+#top-display .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 20%;
+    background-color: #ffffff;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/* Styling for the bubble container */
+#bubble-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: calc(100% - 100px);
+    padding: 30px;
+    overflow: hidden;
+    background-color: #b0c4de;
+}
+
+/* Styling for individual bubbles within the container */
+#bubble-container .bubble {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    background-color: #4169e1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 1%;
+}
+
+/* Styling on hover for bubbles */
+#bubble-container .bubble:hover {
+    background-color: #3551a7;
+    cursor: pointer;
+}
+
+/* Small Screens: 600px to 1023px */
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+    #bubble-container {
+        padding: 10px; /* Adjust padding for small screens */
+    }
+}
+
+/* Extra Small Screens: Below 600px */
+@media only screen and (max-width: 599px) {
+   
+    #bubble-container {
+        padding: 5px; /* Adjust padding for extra small screens */
+    }
+    body {
+        overflow: hidden;
+    }
+    #bubble-container .bubble {
+        margin: 2.8%;
+    }
+}
+
+/* Media query for screens with a maximum width of 1050px */
+@media only screen and (max-width: 1050px) {
+    #top-display {
+        padding: 0 150px; /* Adjust padding for smaller screens */
+    }
+
+    #top-display .elem {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    #top-display .box {
+        width: 25px; /* Adjust box size for smaller screens */
+        height: 25px;
+        font-size: 15px; /* Adjust font size for smaller screens */
+    }
+    #bubble-container .bubble {
+        margin: 1.6%;
+    }
+}
+
+/* Media query for screens with a maximum width of 750px */
+@media only screen and (max-width: 750px) {
+    #top-display {
+        padding: 0 10%; /* Adjust padding for smaller screens */
+    }
+
+    #launcher h1 {
+        font-size: 25px;
+    }
+
+    #launcher h5 {
+        bottom: 30vh;
+        font-weight: 300;
+    }
+
+    #launcher #social-links {
+        position: absolute;
+        bottom: 24vh;
+    }
+
+    #top-display .box {
+        margin-left: 7px;
+    }
+    #bubble-container .bubble {
+        margin: 1.7%;
+    }
+  
+}
+
+/* Media query for screens with a maximum width of 480px */
+@media only screen and (max-width: 480px) {
+    #top-display {
+        padding: 0 15px; /* Adjust padding for even smaller screens */
+    }
+
+    #launcher h1 {
+        font-size: 2.3vh;
+    }
+    #bubble-container .bubble {
+        margin: 3%;
+    }
+}
